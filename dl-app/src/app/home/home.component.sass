@@ -1,0 +1,108 @@
+// Define primary color variable
+$primary-color: #007bff // blue color
+
+// Header component
+app-header
+  background-color: $primary-color
+  color: white
+  padding: 20px
+
+app-footer
+  background-color: $primary-color
+  color: white
+  padding: 20px
+
+// Container styling
+.container
+  max-width: 600px
+  margin: 0 auto
+  padding: 20px
+
+// Form styling
+.form-group
+  margin-bottom: 20px
+
+label
+  font-weight: bold
+
+input[type="number"]
+  width: 100%
+  padding: 10px
+  border: 1px solid #ccc
+  border-radius: 5px
+  outline: none
+
+button.btn-primary
+  background-color: $primary-color
+  color: white
+  border: none
+  padding: 10px 20px
+  border-radius: 5px
+  cursor: pointer
+  transition: background-color 0.3s ease
+
+  &:hover
+    background-color: darken($primary-color, 10%)
+
+.prediction-result
+  text-align: center
+  margin-top: 50px
+
+  h3
+    color: #007bff
+
+  p
+    color: #007bff
+
+.wrapper
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+.content
+  flex-grow: 1
+
+.app-header, .app-footer
+  width: 100%
+  background-color: blue
+  color: white
+  text-align: center
+  padding: 20px
+
+/* audio-container.component.scss */
+
+.audio-container
+  padding: 20px
+  border: 1px solid #ccc
+  border-radius: 5px
+  background-color: #f9f9f9
+  margin-bottom: 20px
+
+  h2
+    margin-bottom: 10px
+
+  .audio-wrapper
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+    audio
+      width: 100%
+
+  .add-button
+    display: block
+    margin-top: 20px /* Increased margin for spacing */
+    padding: 12px 24px /* Increased padding for a bigger button */
+    background-color: #007bff /* Blue background color */
+    color: #fff /* White text color */
+    border: none
+    border-radius: 8px /* Rounded border */
+    cursor: pointer
+    font-size: 18px /* Increased font size for a bigger button */
+
+    &:hover
+      background-color: #0056b3 /* Darker blue on hover */
+
+
+
+

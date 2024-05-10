@@ -1,0 +1,64 @@
+<div class="wrapper">
+<app-header></app-header>
+<div class="audio-container">
+  <h2>Test Data</h2>
+
+<audio controls>
+  <source src="assets/train1.wav" type="audio/wav">
+  Your browser does not support the audio tag.
+</audio>
+<audio controls>
+  <source src="assets/train2.wav" type="audio/wav">
+  Your browser does not support the audio tag.
+</audio>
+<audio controls>
+  <source src="assets/train3.wav" type="audio/wav">
+  Your browser does not support the audio tag.
+</audio>
+<audio controls>
+  <source src="assets/train4.wav" type="audio/wav">
+  Your browser does not support the audio tag.
+</audio>
+<audio controls>
+  <source src="assets/train5.wav" type="audio/wav">
+  Your browser does not support the audio tag.
+</audio>
+<audio controls>
+  <source src="assets/train6.wav" type="audio/wav">
+  Your browser does not support the audio tag.
+</audio>
+<button class="add-button" (click)="gen()">Generate some notes</button>
+</div>
+
+<div class="audio-container" *ngIf="showAdditionalContainer">
+  <h2>Generated Notes</h2>
+
+<audio controls>
+  <source src="assets/gen1.wav" type="audio/wav">
+  Your browser does not support the audio tag.
+</audio>
+<audio controls>
+  <source src="assets/gen2.wav" type="audio/wav">
+  Your browser does not support the audio tag.
+</audio>
+<audio controls>
+  <source src="assets/gen3.wav" type="audio/wav">
+  Your browser does not support the audio tag.
+</audio>
+<audio controls>
+  <source src="assets/gen4.wav" type="audio/wav">
+  Your browser does not support the audio tag.
+</audio>
+<audio controls>
+  <source src="assets/gen5.wav" type="audio/wav">
+  Your browser does not support the audio tag.
+</audio>
+<audio controls>
+  <source src="assets/train6.wav" type="audio/wav">
+  Your browser does not support the audio tag.
+</audio>
+<button class="add-button" (click)="reset()">Reset</button>
+</div>
+  
+<app-footer></app-footer>
+</div>
